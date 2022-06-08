@@ -18,9 +18,8 @@ window.onload = function() {
 
 <script type="text/javascript">
     function showAndroidToast(toast) {
-        Android.showToast(toast);
-        //document.getElementById('w3review').innerHTML = val;
-
+        var val = Android.showToast(toast);
+        document.getElementById('w3review').innerHTML = val;
     }
 </script>
 
