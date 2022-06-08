@@ -14,13 +14,13 @@ window.onload = function() {
 }; 
 </script>
 
-<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+<input type="button" value="Say hello" onClick="showAndroidToast()" />
 
 <script type="text/javascript">
-    function showAndroidToast(toast) {
-        Android.showToast(toast);
-        init(toast);
-
+    function showAndroidToast() {
+        //Android.showToast(toast);
+        var val = Android.getDisplayKey();
+        init(val);
     }
 </script>
 
