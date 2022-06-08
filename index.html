@@ -19,7 +19,8 @@ window.onload = function() {
 <script type="text/javascript">
     function showAndroidToast(toast) {
         Android.showToast(toast);
-        document.getElementById('w3review').innerHTML = toast;
+        init(toast);
+
     }
 </script>
 
@@ -30,7 +31,7 @@ window.onload = function() {
     function init(val){
 // Do whatever you want with your parameter val
            // console.log("init call"+val);
-            init(toast);
+            document.getElementById('w3review').innerHTML = val;
             
     }
 </script>
