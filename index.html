@@ -11,9 +11,19 @@
 <script>
 window.onload = function() {
     init("dfg");
-};
-
+}; 
 </script>
+
+<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
+        //document.getElementById('w3review').innerHTML = val;
+
+    }
+</script>
+
 </body>
 
 <script type="text/javascript">
